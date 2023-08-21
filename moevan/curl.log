@@ -1,0 +1,45 @@
+*   Trying 167.99.195.129:443...
+* Connected to sandbox.vtpass.com (167.99.195.129) port 443 (#0)
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*  CAfile: C:\xampp1\apache\bin\curl-ca-bundle.crt
+*  CApath: none
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN, server accepted to use http/1.1
+* Server certificate:
+*  subject: CN=sandbox.vtpass.com
+*  start date: Jun 28 01:05:10 2023 GMT
+*  expire date: Sep 26 01:05:09 2023 GMT
+*  subjectAltName: host "sandbox.vtpass.com" matched cert's "sandbox.vtpass.com"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* Server auth using Basic with user 'Moevanenterprise@gmail.com'
+> POST /api/pay HTTP/1.1
+Host: sandbox.vtpass.com
+Authorization: Basic TW9ldmFuZW50ZXJwcmlzZUBnbWFpbC5jb206UHJvbWlzZTEyMzQ=
+Accept: */*
+Accept-Encoding: deflate, gzip
+Content-Length: 475
+Content-Type: multipart/form-data; boundary=------------------------aac53554338c3549
+
+* We are completely uploaded and fine
+* old SSL session ID is stale, removing
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Server: nginx
+< Date: Sun, 23 Jul 2023 21:18:13 GMT
+< Content-Type: application/json
+< Transfer-Encoding: chunked
+< Connection: keep-alive
+< Vary: Accept-Encoding
+< Access-Control-Allow-Credentials: true
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: *
+< Access-Control-Allow-Headers: *
+< Cache-Control: private, must-revalidate
+< pragma: no-cache
+< expires: -1
+< Set-Cookie: laravel_session=eyJpdiI6Ik5jMlM5clwvXC90SVNLTFlPYVphWUJqZz09IiwidmFsdWUiOiJtMXpcLzRMSGVsdzVkazRqdjVVNmFSTVwvUHR3akFMOGNkQXNwNUdTeUloOUxEaklRUDVZMm82NktcL2dlRW5Dd0RWRndRK05zQVlJbWpFRXc0bjV1VmF2Zz09IiwibWFjIjoiMjVkNjMyOWY4YTdkNmIxMDVhOTBhN2NmY2Q1ODAxMGU0MjU5ODYwZTRhNzIxOWQ0MjI3ZmY1MzViNzA5NTVjZSJ9; expires=Thu, 21-Sep-2023 21:18:13 GMT; Max-Age=5184000; path=/; HttpOnly
+< Content-Encoding: gzip
+< 
+* Connection #0 to host sandbox.vtpass.com left intact

@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Adobe Clean Serif', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  color: #00C0C0;
+}
+
+.navbar a {
+  color: #f89f31;
+}
+
+.nav-links a {
+  color: #00C0C0;
+}
+
+.nav-links {
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-end;
+  justify-items: flex-end;
+}
+
+/* LOGO */
+.logo {
+  /* font-size: 32px; */
+  margin-right: 12px;
+}
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 0.3em;
+  font-size: 16px;
+}
+
+.menu li:hover {
+  background-color: #00C0C0;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  color: #fff;
+}
+
+.menu li a:hover {
+  transition: 0.3s ease;
+  color: #fff;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+/* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+  display: none;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    max-height: 0vh;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    position: absolute;
+    background-color: #00C0C0;
+    right: 0;
+    left: 0;
+    text-align: end;
+    padding: 16px 0;
+    background-image: url('../moevan icons/Path\ 6.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    color: #000;
+    transition: 0.3s ease;
+  }
+
+  .menu li+li {
+    margin-top: 12px;
+  }
+
+  input[type=checkbox]:checked~.menu {
+    display: block;
+    top: 70px;
+    max-height: 210px;
+    z-index: 999;
+  }
+
+  input[type=checkbox]:checked~.hamburger {
+    color: #f89f31;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links a {
+    color: #fff;
+  }
+}
