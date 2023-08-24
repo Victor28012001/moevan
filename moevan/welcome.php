@@ -215,22 +215,6 @@ if (strlen($_SESSION['id'] == 0)) {
     </div>
     </div>
 
-    <!-- <script>
-      var loader = document.getElementById("preloader");
-
-      window.addEventListener("load", () => {
-        loader.style.display = "none";
-      })
-    </script> -->
-
-
-    <!-- <script>
-      $(window).on('load', function () {
-        $('.loader').fadeOut(1000);
-        $('.scrolls').fadeIn(1000);
-      })
-    </script> -->
-
     <script src="js/script.js"></script>
 
 
