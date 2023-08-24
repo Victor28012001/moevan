@@ -60,8 +60,9 @@ if (strlen($_SESSION['id'] == 0)) {
                 </div>
                 <div class="cont">
                     <h4>Amount</h4>
-                    <input id="amount" class="form-control" type="text" name="amount" required>
+                    <input id="amount" class="form-control" type="text" name="amount" oninput="myFunction()" required>
                 </div>
+                <input id="trans_charge" class="form-control" type="hidden" name="trans_charge" value="50">
 
 
                 <div class="topup-pay">
@@ -71,8 +72,8 @@ if (strlen($_SESSION['id'] == 0)) {
                     </div>
 
                     <div class="values">
-                        <h5 name="trans_charge">N 50.0</h5>
-                        <h5>N 0.0</h5>
+                        <h5>N<span id="chg"></span>.00</h5>
+                        <h5>N<span id="chng"></span>.00</h5>
                     </div>
 
                 </div>
@@ -90,6 +91,16 @@ if (strlen($_SESSION['id'] == 0)) {
 
 
         </div>
+        <script>
+            function myFunction() {
+                let amount = document.getElementById("amount").value;
+                let trans_charge = document.getElementById("trans_charge").value;
+                let tranx_charge = document.getElementById("chg");
+                let tranx_amount = document.getElementById("chng");
+                tranx_charge.innerHTML = trans_charge;
+                tranx_amount.innerHTML = +amount + + trans_charge;
+            }
+        </script>
     </body>
 
     <?php

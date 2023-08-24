@@ -20,14 +20,14 @@ Authorization: Basic TW9ldmFuZW50ZXJwcmlzZUBnbWFpbC5jb206UHJvbWlzZTEyMzQ=
 Accept: */*
 Accept-Encoding: deflate, gzip
 Content-Length: 475
-Content-Type: multipart/form-data; boundary=------------------------aac53554338c3549
+Content-Type: multipart/form-data; boundary=------------------------92728b009bc3bb73
 
 * We are completely uploaded and fine
 * old SSL session ID is stale, removing
 * Mark bundle as not supporting multiuse
 < HTTP/1.1 200 OK
 < Server: nginx
-< Date: Sun, 23 Jul 2023 21:18:13 GMT
+< Date: Thu, 24 Aug 2023 10:41:00 GMT
 < Content-Type: application/json
 < Transfer-Encoding: chunked
 < Connection: keep-alive
@@ -39,7 +39,7 @@ Content-Type: multipart/form-data; boundary=------------------------aac53554338c
 < Cache-Control: private, must-revalidate
 < pragma: no-cache
 < expires: -1
-< Set-Cookie: laravel_session=eyJpdiI6Ik5jMlM5clwvXC90SVNLTFlPYVphWUJqZz09IiwidmFsdWUiOiJtMXpcLzRMSGVsdzVkazRqdjVVNmFSTVwvUHR3akFMOGNkQXNwNUdTeUloOUxEaklRUDVZMm82NktcL2dlRW5Dd0RWRndRK05zQVlJbWpFRXc0bjV1VmF2Zz09IiwibWFjIjoiMjVkNjMyOWY4YTdkNmIxMDVhOTBhN2NmY2Q1ODAxMGU0MjU5ODYwZTRhNzIxOWQ0MjI3ZmY1MzViNzA5NTVjZSJ9; expires=Thu, 21-Sep-2023 21:18:13 GMT; Max-Age=5184000; path=/; HttpOnly
+< Set-Cookie: laravel_session=eyJpdiI6IjNOdFNLUFdVandQQVgrTmZNN2RcL0dRPT0iLCJ2YWx1ZSI6IjJuK3ByWklQdTdnZ3c5QjZJR3dGdmVMdzhGS1lsNlA0ME4zSURcL3pSM2NoRW0yODhDSktrWXd2Vks3K1wvNCtxQWpcL3RHN2E5WGI5UFVLTWZuUUtUN0RnPT0iLCJtYWMiOiIyNzg5OTkwZWI1NDcyNTliMDEyNTlmY2FhYjhjZmY0MjY1NDRmY2ZkNGE3YmFlNjVkZTM2NTNkMzU0OTU1MjExIn0%3D; expires=Mon, 23-Oct-2023 10:41:00 GMT; Max-Age=5184000; path=/; HttpOnly
 < Content-Encoding: gzip
 < 
 * Connection #0 to host sandbox.vtpass.com left intact

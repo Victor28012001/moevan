@@ -15,7 +15,7 @@ if (strlen($_SESSION['id'] == 0)) {
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> -->
     <meta name="description" content="VTU website with the best data and airtime plans" />
     <meta name="author" content="" />
-    <link rel="shortcut icon" href="moevan icons\meovan symbol.png" type="image/x-icon">
+    <link rel="shortcut icon" href="moevan icons\meovan symbol.svg" type="image/x-icon">
     <title>Dashboard | Moevan</title>
     <!-- <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" /> -->
     <!-- <link href="css/styles.css" rel="stylesheet" /> -->
