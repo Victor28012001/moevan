@@ -73,9 +73,6 @@ if (strlen($_SESSION['id'] == 0)) {
         </div>
     </body>
 
-    <script>
-
-    </script>
 
     <script src="js/script.js"></script>
 

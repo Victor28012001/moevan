@@ -24,12 +24,7 @@ if (strlen($_SESSION['id'] == 0)) {
     <link href="https://fonts.cdnfonts.com/css/adobe-clean" rel="stylesheet">
   </head>
 
-  <body style="height: 100vh;">
-
-    <!-- <div id="preloader"></div> -->
-    <div class="loader">
-      <div><img src="moevan icons\meovan symbol.png" alt=""></div>
-    </div>
+  <body style="overflow-x:hidden;">
 
 
     <?php include_once('includes/navbar.php'); ?>
@@ -229,12 +224,12 @@ if (strlen($_SESSION['id'] == 0)) {
     </script> -->
 
 
-    <script>
+    <!-- <script>
       $(window).on('load', function () {
         $('.loader').fadeOut(1000);
-        $('main').fadeIn(1000);
+        $('.scrolls').fadeIn(1000);
       })
-    </script>
+    </script> -->
 
     <script src="js/script.js"></script>
 

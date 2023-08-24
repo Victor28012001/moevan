@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x:hidden;">
 
 <head>
   <meta charset="UTF-8">
@@ -14,7 +14,7 @@
     content="VTU,SUBSCRIPTIONS,DATA,AIRTIME,BEST PRICE,CHEAP,CABLE,ELECTRICITY,WAEC,JAMB,RESULTS,CHECK,BULK,SMS">
   <meta name="description"
     content="best VTU website for cheap data,airtime,result checking,electricity and cable payments">
-  <link rel="shortcut icon" href="moevan icons\meovan symbol.png" type="image/x-icon">
+  <link rel="shortcut icon" href="moevan icons\meovan symbol.svg" type="image/x-icon">
   <link href="css/navbar.css" rel="stylesheet" />
   <!-- <link href="css/style.css" rel="stylesheet" /> -->
   <link href="css/prestyles.css" rel="stylesheet" />
@@ -36,13 +36,14 @@
   <script>
     AOS.init();
   </script>
+  
 
 
 </head>
 
 <body style="overflow-x:hidden;">
   <div class="loader">
-    <div><img src="moevan icons\meovan symbol.png" alt=""></div>
+    <div><img src="moevan icons\meovan symbol.svg" alt=""></div>
   </div>
   <main>
     <?php include('includes/navbar1.php'); ?>
@@ -75,16 +76,14 @@
               loading="lazy" />
           </div>
         </div>
-        <!-- <img src="./assets/img/png/logo-art.png" class="dec-art" data-aos="fade" data-aos-duration="400"
-          data-aos-delay="500" /> -->
       </div>
     </section>
 
     <section class="whyMoevan">
       <div class="why-moevan">
         <div>
-          <div class="col-sm-12 col-md-12 col-lg-6 p-0">
-            <div class=" desk-mr-auto pr-20 pl-20 pb-30">
+          <div class="">
+            <div class=" desk">
               <h2>why</h2>
               <div id="logo">
                 <svg width="146" height="35" viewBox="0 0 146 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -138,7 +137,7 @@
         <img src="moevan icons\moevan city.jpg" alt="moevan-city" loading="lazy">
       </div>
 
-      <div class="why">
+      <div class="why" id="why">
         <div class="icons">
         <svg xmlns="http://www.w3.org/2000/svg"  class="icon"  viewBox="0 0 83.714 82.458" data-aos="flip-right"
             data-aos-duration="1300"><defs><style>.a{fill:#9b9b9b;fill-rule:evenodd;}</style></defs><path class="a" d="M136.973,83.115h45.906l-.007,63.913a18.439,18.439,0,0,1-18.488,18.533l-27.411.012v-9.117h6.013l10.009-34.816,2.431,10.811,13.078.021-6.033-40.2h-4.7c-10.116,0-12.57,9.171-13.064,10.537l-7.733,25.934V83.115Zm-2.341,45.941-11.053-36.64c-7.923,0-15.368,4.409-16.446,12.038l-7.968,51.9c7.539,0,15.018-4.235,16.119-11.523l3.188-23.118,9.992,34.741h6.168v-27.4Zm20.51,17.991a9.242,9.242,0,0,0,9.212,9.217h0a9.242,9.242,0,0,0,9.212-9.217h0a9.241,9.241,0,0,0-9.212-9.217h0a9.241,9.241,0,0,0-9.212,9.217Z" transform="translate(-99.165 -83.115)"/></svg>
@@ -2023,7 +2022,7 @@ RU5ErkJggg=="/>
       <div class="wrapper">
         <div class="carousel owl-carousel">
           <div class="card card-1">
-            <div class="ig"><img src="images\yingchou-han-IJrIeCs3D4g-unsplash.jpg" alt="" class="igs" loading="lazy" />
+            <div class="ig"><img src="images\yingchou-han-IJrIeCs3D4g-unsplash(2).jpg" alt="" class="igs" loading="lazy" />
             </div>
             <div class="details">
               <p>
@@ -2034,7 +2033,7 @@ RU5ErkJggg=="/>
             </div>
           </div>
           <div class="card card-2">
-            <div class="ig"><img src="images\portrait-young-woman-smiling-isolated.jpg" alt="" class="igs"
+            <div class="ig"><img src="images\portrait-young-woman-smiling-isolated(2).jpg" alt="" class="igs"
                 loading="lazy" /></div>
             <div class="details">
               <p>
@@ -2045,7 +2044,7 @@ RU5ErkJggg=="/>
             </div>
           </div>
           <div class="card card-3">
-            <div class="ig"><img src="images\portrait-young-man-isolated.jpg" alt="" class="igs" loading="lazy" /></div>
+            <div class="ig"><img src="images\portrait-young-man-isolated(2).jpg" alt="" class="igs" loading="lazy" /></div>
             <div class="details">
               <p>
                 before this automated means, the speed in transactions has always been a plus... now it's lightning.
@@ -2055,7 +2054,7 @@ RU5ErkJggg=="/>
             </div>
           </div>
           <div class="card card-4">
-            <div class="ig"><img src="images\portrait-handsome-man-outdoors.jpg" alt="" class="igs" loading="lazy" />
+            <div class="ig"><img src="images\portrait-handsome-man-outdoors(2).jpg" alt="" class="igs" loading="lazy" />
             </div>
             <div class="details">
               <p>
@@ -2136,10 +2135,6 @@ RU5ErkJggg=="/>
     });
   </script>
 
-  <script>
-    AOS.init();
-  </script>
-
 
   <script>
     $(window).on('load', function () {
@@ -2152,7 +2147,11 @@ RU5ErkJggg=="/>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
+  <!--   -->
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 
-</html>
+</html> 

@@ -34,9 +34,9 @@ if (strlen($_SESSION['id'] == 0)) {
       <span class="two"></span>
       <span class="three"></span>
     </div>
-    <a href="welcome.php"><img class="mlogo" src="moevan icons\Wordmark logo.svg" alt=""></a>
+    <a href="welcome.php"><img class="mlogo" src="moevan icons\navbar-icons\Wordmark logo.svg" alt=""></a>
     <a href="notification.php" class="notification">
-      <img class="mbell" src="moevan icons\🦆 icon _bell_.svg" alt="">
+      <img class="mbell" src="moevan icons\navbar-icons\🦆 icon _bell_.svg" alt="">
       <?php if (!empty($count_actives)) { ?>
         <div class="badge" id="bell-count" data-value="<?php echo $count_actives; ?>"><span>
             <?php echo $count_active; ?>

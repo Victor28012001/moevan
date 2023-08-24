@@ -36,19 +36,12 @@ section.intro .info {
     }
 
     .awords p{
-        font-size: medium;
+        font-size: small;
     }
 
     a p {
-        font-style: normal;
-        font-weight: 200;
-        font-size: 12px;
-        line-height: 75%;
         margin-left: .8em;
-        padding-right: 31em;
-        opacity: .6;
         color: #f89f31;
-        width: 100%;
         margin-top: 1em;
     }
 
@@ -89,7 +82,7 @@ section.intro .info {
         flex-direction: row;
         justify-content: space-around;
         padding: 5px;
-        margin: 20px 5px;
+        margin: 5px 5px;
     }
 
 
@@ -290,6 +283,8 @@ section.intro .info {
         margin-left: 22px;
         align-self: center;
         display: flex;
+        font-size: x-small;
+        line-height: 28px;
     }
 
     footer .text-muted {

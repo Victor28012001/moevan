@@ -15,13 +15,10 @@ if (strlen($_SESSION['id'] == 0)) {
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Profile | Moevan</title>
-        <!-- <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" /> -->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/style.css">
         <link href="css/sidebar.css" rel="stylesheet" />
         <link rel="shortcut icon" href="moevan icons\meovan symbol.svg" type="image/x-icon">
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
-            crossorigin="anonymous"></script> -->
     </head>
 
     <body class="sb-nav-fixed">
@@ -101,14 +98,6 @@ if (strlen($_SESSION['id'] == 0)) {
 
             </div>
         </div>
-        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-            crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="assets/demo/chart-area-demo.js"></script>
-        <script src="assets/demo/chart-bar-demo.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
-        <script src="js/datatables-simple-demo.js"></script> -->
         <script src="js/script.js"></script>
     </body>
 

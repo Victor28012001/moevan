@@ -33,12 +33,12 @@ if (strlen($_SESSION['id'] == 0)) {
         <div class="contwhat" style="color: rgba(0, 0, 0, 0.8);">
 
             <div class="whatsapp">
-                <img src="moevan icons\🦆 icon _brand whatsapp_.png" alt="">
+                <img src="moevan icons\🦆 icon _brand whatsapp_.svg" alt="">
                 <h5>1234567890</h5>
             </div>
 
             <div class="whatsapp" style="color: rgba(0, 0, 0, 0.8);">
-                <img src="moevan icons\🦆 icon _telegram plane_.png" alt="">
+                <img src="moevan icons\🦆 icon _telegram plane_.svg" alt="">
                 <h5>1234567890</h5>
             </div>
 

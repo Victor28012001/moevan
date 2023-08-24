@@ -45,7 +45,7 @@ li {
 /* LOGO */
 .logo {
   /* font-size: 32px; */
-  margin-right: 12px;
+  margin-right: 18px;
 }
 
 /* NAVBAR MENU */
@@ -99,7 +99,7 @@ input[type=checkbox] {
     left: 0;
     text-align: end;
     padding: 16px 0;
-    background-image: url('../moevan icons/Path\ 6.png');
+    background-image: url('../moevan icons/Path\ 6.svg');
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -122,14 +122,22 @@ input[type=checkbox] {
   }
 
   input[type=checkbox]:checked~.hamburger {
-    color: #f89f31;
+    /* color: #f89f31; */
+    transform: rotateZ(90deg);
   }
 
   .hamburger {
     display: block;
+    color: #acacac;
+    cursor: pointer;
+    transform: rotateZ(0);
   }
 
   .nav-links a {
     color: #fff;
+  }
+
+  .navbar .logo-link img {
+    width: 90px;
   }
 }

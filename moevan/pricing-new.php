@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="moevan icons\meovan symbol.png" type="image/x-icon">
+    <link rel="shortcut icon" href="moevan icons\meovan symbol.svg" type="image/x-icon">
     <!-- <link href="css/style.css" rel="stylesheet" /> -->
     <link href="css/navbar.css" rel="stylesheet" />
     <link href="css/pre.css" rel="stylesheet" />
@@ -18,255 +18,294 @@
     <main>
         <div class="pricing">
             <h2>Our Data Pricing</h2>
-            <div class="mtn">
-                <div class="slogo">
-                    <img src="moevan icons\MTN.svg" alt="">
-                </div>
-                <table>
-                    <tr>
-                        <td>500MB[SME]</td>
-                        <td>30 DAYS</td>
-                        <td>N150.00</td>
-                    </tr>
-                    <tr class="even-row">
-                        <td>1GB[SME]</td>
-                        <td>30DAYS</td>
-                        <td>N280.00</td>
-                    </tr>
-                    <tr>
-                        <td>2GB[SME]</td>
-                        <td>30 DAYS</td>
-                        <td>N560.00</td>
-                    </tr>
-                    <tr class="even-row">
-                        <td>3GB[SME]</td>
-                        <td>30DAYS</td>
-                        <td>N840.00</td>
-                    </tr>
-                    <tr>
-                        <td>5GB[SME]</td>
-                        <td>30 DAYS</td>
-                        <td>N1400.00</td>
-                    </tr>
-                    <tr class="even-row">
-                        <td>10GB[SME]</td>
-                        <td>30DAYS</td>
-                        <td>N2750.00</td>
-                    </tr>
-                    <tr>
-                        <td>500MB</td>
-                        <td>1 MONTH</td>
-                        <td>N145.00</td>
-                    </tr>
-                    <tr class="even-row">
-                        <td>1GB</td>
-                        <td>1 MONTH</td>
-                        <td>N269.00</td>
-                    </tr>
-                    <tr>
-                        <td>2GB</td>
-                        <td>1 MONTH</td>
-                        <td>N538.00</td>
-                    </tr>
-                    <tr class="even-row">
-                        <td>3GB</td>
-                        <td>1 MONTH</td>
-                        <td>N807.00</td>
-                    </tr>
-                </table>
-                <div class="button">
-                    <button>buy</button>
-                </div>
-            </div>
-            <div class="airtel">
-                <div class="slogo">
-                    <img src="moevan icons\Airtel.svg" alt="">
-                </div>
-                <table>
-                    <tr>
-                        <td>500MB[SME]</td>
-                        <td>30 DAYS</td>
-                        <td>N150.00</td>
-                    </tr>
-                    <tr class="even-row">
-                        <td>1GB[SME]</td>
-                        <td>30DAYS</td>
-                        <td>N280.00</td>
-                    </tr>
-                    <tr>
-                        <td>2GB[SME]</td>
-                        <td>30 DAYS</td>
-                        <td>N560.00</td>
-                    </tr>
-                    <tr class="even-row">
-                        <td>3GB[SME]</td>
-                        <td>30DAYS</td>
-                        <td>N840.00</td>
-                    </tr>
-                    <tr>
-                        <td>5GB[SME]</td>
-                        <td>30 DAYS</td>
-                        <td>N1400.00</td>
-                    </tr>
-                    <tr class="even-row">
-                        <td>10GB[SME]</td>
-                        <td>30DAYS</td>
-                        <td>N2750.00</td>
-                    </tr>
-                    <tr>
-                        <td>500MB</td>
-                        <td>1 MONTH</td>
-                        <td>N145.00</td>
-                    </tr>
-                    <tr class="even-row">
-                        <td>1GB</td>
-                        <td>1 MONTH</td>
-                        <td>N269.00</td>
-                    </tr>
-                    <tr>
-                        <td>2GB</td>
-                        <td>1 MONTH</td>
-                        <td>N538.00</td>
-                    </tr>
-                    <tr class="even-row">
-                        <td>3GB</td>
-                        <td>1 MONTH</td>
-                        <td>N807.00</td>
-                    </tr>
-                </table>
-                <div class="button">
-                    <button>buy</button>
-                </div>
-            </div>
-            <div class="glo">
-                <div class="slogo">
-                    <img src="moevan icons\Glo.svg" alt="">
-                </div>
-                <table>
-                    <tr>
-                        <td>500MB[SME]</td>
-                        <td>30 DAYS</td>
-                        <td>N150.00</td>
-                    </tr>
-                    <tr class="even-row">
-                        <td>1GB[SME]</td>
-                        <td>30DAYS</td>
-                        <td>N280.00</td>
-                    </tr>
-                    <tr>
-                        <td>2GB[SME]</td>
-                        <td>30 DAYS</td>
-                        <td>N560.00</td>
-                    </tr>
-                    <tr class="even-row">
-                        <td>3GB[SME]</td>
-                        <td>30DAYS</td>
-                        <td>N840.00</td>
-                    </tr>
-                    <tr>
-                        <td>5GB[SME]</td>
-                        <td>30 DAYS</td>
-                        <td>N1400.00</td>
-                    </tr>
-                    <tr class="even-row">
-                        <td>10GB[SME]</td>
-                        <td>30DAYS</td>
-                        <td>N2750.00</td>
-                    </tr>
-                    <tr>
-                        <td>500MB</td>
-                        <td>1 MONTH</td>
-                        <td>N145.00</td>
-                    </tr>
-                    <tr class="even-row">
-                        <td>1GB</td>
-                        <td>1 MONTH</td>
-                        <td>N269.00</td>
-                    </tr>
-                    <tr>
-                        <td>2GB</td>
-                        <td>1 MONTH</td>
-                        <td>N538.00</td>
-                    </tr>
-                    <tr class="even-row">
-                        <td>3GB</td>
-                        <td>1 MONTH</td>
-                        <td>N807.00</td>
-                    </tr>
-                </table>
-                <div class="button">
-                    <button>buy</button>
-                </div>
-            </div>
-            <div class="mobile9">
-                <div class="slogo">
-                    <img src="moevan icons\9mobile.svg" alt="">
-                </div>
-                <table>
-                    <tr>
-                        <td>500MB[SME]</td>
-                        <td>30 DAYS</td>
-                        <td>N150.00</td>
-                    </tr>
-                    <tr class="even-row">
-                        <td>1GB[SME]</td>
-                        <td>30DAYS</td>
-                        <td>N280.00</td>
-                    </tr>
-                    <tr>
-                        <td>2GB[SME]</td>
-                        <td>30 DAYS</td>
-                        <td>N560.00</td>
-                    </tr>
-                    <tr class="even-row">
-                        <td>3GB[SME]</td>
-                        <td>30DAYS</td>
-                        <td>N840.00</td>
-                    </tr>
-                    <tr>
-                        <td>5GB[SME]</td>
-                        <td>30 DAYS</td>
-                        <td>N1400.00</td>
-                    </tr>
-                    <tr class="even-row">
-                        <td>10GB[SME]</td>
-                        <td>30DAYS</td>
-                        <td>N2750.00</td>
-                    </tr>
-                    <tr>
-                        <td>500MB</td>
-                        <td>1 MONTH</td>
-                        <td>N145.00</td>
-                    </tr>
-                    <tr class="even-row">
-                        <td>1GB</td>
-                        <td>1 MONTH</td>
-                        <td>N269.00</td>
-                    </tr>
-                    <tr>
-                        <td>2GB</td>
-                        <td>1 MONTH</td>
-                        <td>N538.00</td>
-                    </tr>
-                    <tr class="even-row">
-                        <td>3GB</td>
-                        <td>1 MONTH</td>
-                        <td>N807.00</td>
-                    </tr>
-                </table>
-                <div class="button">
-                    <button>buy</button>
-                </div>
-            </div>
-        </div>
+            <?php
 
 
-        <?php include('includes/footer.php'); ?>
+            error_reporting(E_ALL ^ E_WARNING);
+
+            $username = "MoevannEnterprise"; //email address(sandbox@vtpass.com)
+            $password = "Promise1234";
+
+            $host = 'https://sandbox.vtpass.com/api/service-variations?serviceID=airtel-data';
+            $curl = curl_init();
+
+
+            curl_setopt($curl, CURLOPT_URL, $host);
+            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+            $vdata = curl_exec($curl);
+
+            if ($e = curl_error($curl)) {
+                echo $e;
+            } else {
+                $res = json_decode($vdata, true);
+
+                $color = NULL;
+
+                $color1 = "#f6f6f6";
+                $color2 = "#e0e0e0";
+                // print_r($res);
+            
+                ?>
+                <div class="airtel">
+                    <div class="slogo">
+                        <img src="moevan icons\Airtel.svg" alt="">
+                    </div>
+                    <table border="0" cellpadding="5" cellspacing="0" width="200">
+                        <?php
+
+
+
+                        foreach ($res['content']['varations'] as $vars) {
+
+
+                            $str = $vars['name'];
+                            $headers = explode('-', $str);
+
+
+                            // $headers.shift();        
+                            // print_r($headers);
+                    
+                            $color == $color1 ? $color = $color2 : $color = $color1;
+
+
+                            ?>
+                            <?php echo "
+                <tr style='background-color:$color; text-align:center; font-weight:bold;'>
+                    <td value=" . $vars['name'] . ">" . $headers[2] . " " . $headers[3] . "</td>
+                    <td value=" . $vars['variation_amount'] . ">" . $vars['variation_amount'] . "</td>
+                </tr>"; ?>
+                            <?php
+
+                        }
+
+                        ?>
+                    </table>
+                    <div class="button">
+                    <a href="login.php"><button>buy</button></a>
+                    </div>
+                </div>
+                <?php
+            }
+
+
+
+            curl_close($curl);
+
+
+
+            $host = 'https://sandbox.vtpass.com/api/service-variations?serviceID=mtn-data';
+            $curl = curl_init();
+
+
+            curl_setopt($curl, CURLOPT_URL, $host);
+            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+            $vdata = curl_exec($curl);
+
+            if ($e = curl_error($curl)) {
+                echo $e;
+            } else {
+                $res = json_decode($vdata, true);
+
+                $color = NULL;
+
+                $color1 = "#fcbd1c";
+                $color2 = "#ffca45";
+                // print_r($res);
+            
+                ?>
+                <div class="mtn">
+                    <div class="slogo">
+                        <img src="moevan icons\MTN.svg" alt="">
+                    </div>
+                    <table border="0" cellpadding="5" cellspacing="0" width="200">
+                        <?php
+
+
+
+                        foreach ($res['content']['varations'] as $vars) {
+
+
+                            $str = $vars['name'];
+                            $headers = explode('-', $str);
+
+
+                            // $headers.shift();        
+                            // print_r($headers);
+                            $exp = $headers[0];
+                            $header = explode(' ', $exp);
+
+                            $color == $color1 ? $color = $color2 : $color = $color1;
+
+
+                            ?>
+                            <?php echo "
+                <tr style='background-color:$color; text-align:center; font-weight:bold;'>
+                    <td value=" . $vars['name'] . ">" . $header[1] . " " . $headers[1] . "</td>
+                    <td value=" . $vars['variation_amount'] . ">" . $vars['variation_amount'] . "</td>
+                </tr>"; ?>
+                            <?php
+
+                        }
+
+                        ?>
+                    </table>
+                    <div class="button">
+                    <a href="login.php"><button>buy</button></a>
+                    </div>
+                </div>
+                <?php
+            }
+
+
+
+            curl_close($curl);
+
+
+
+            $host = 'https://sandbox.vtpass.com/api/service-variations?serviceID=glo-data';
+            $curl = curl_init();
+
+
+            curl_setopt($curl, CURLOPT_URL, $host);
+            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+            $vdata = curl_exec($curl);
+
+            if ($e = curl_error($curl)) {
+                echo $e;
+            } else {
+                $res = json_decode($vdata, true);
+
+                $color = NULL;
+
+                $color1 = "#0a8e24";
+                $color2 = "#4d9332";
+                // print_r($res);
+            
+                ?>
+                <div class="glo">
+                    <div class="slogo">
+                        <img src="moevan icons\Glo.svg" alt="">
+                    </div>
+                    <table border="0" cellpadding="5" cellspacing="0" width="200">
+                        <?php
+
+
+
+                        foreach ($res['content']['varations'] as $vars) {
+
+
+                            $str = $vars['name'];
+                            $headers = explode('-', $str);
+
+
+                            // $headers.shift();        
+                            // print_r($headers);
+                    
+
+
+                            $color == $color1 ? $color = $color2 : $color = $color1;
+
+
+                            ?>
+                            <?php echo "
+                <tr style='background-color:$color; text-align:center; font-weight:bold;'>
+                    <td value=" . $vars['name'] . ">" . $headers[1] . " " . $headers[2] . "</td>
+                    <td value=" . $vars['variation_amount'] . ">" . $vars['variation_amount'] . "</td>
+                </tr>"; ?>
+                            <?php
+
+                        }
+
+                        ?>
+                    </table>
+                    <div class="button">
+                        <a href="login.php"><button>buy</button></a>
+                    </div>
+                </div>
+                <?php
+            }
+
+
+
+            curl_close($curl);
+
+
+
+            $host = 'https://sandbox.vtpass.com/api/service-variations?serviceID=etisalat-data';
+            $curl = curl_init();
+
+
+            curl_setopt($curl, CURLOPT_URL, $host);
+            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+            $vdata = curl_exec($curl);
+
+            if ($e = curl_error($curl)) {
+                echo $e;
+            } else {
+                $res = json_decode($vdata, true);
+
+                $color = NULL;
+
+                $color1 = "#004b10";
+                $color2 = "#00570d";
+                // print_r($res);
+            
+                ?>
+                <div class="mobile9">
+                    <div class="slogo">
+                        <img src="moevan icons\9mobile.svg" alt="">
+                    </div>
+                    <table border="0" cellpadding="5" cellspacing="0" width="200">
+                        <?php
+
+
+
+                        foreach ($res['content']['varations'] as $vars) {
+
+
+                            $str = $vars['name'];
+                            $headers = explode('-', $str);
+
+
+                            // $headers.shift();        
+                            // print_r($headers);
+                    
+
+
+                            $color == $color1 ? $color = $color2 : $color = $color1;
+
+
+                            ?>
+                            <?php echo "
+                <tr style='background-color:$color; text-align:center; font-weight:bold;'>
+                    <td value=" . $vars['name'] . ">" . $headers[2] . " " . $headers[3] . "</td>
+                    <td value=" . $vars['variation_amount'] . ">" . $vars['variation_amount'] . "</td>
+                </tr>"; ?>
+                            <?php
+
+                        }
+
+                        ?>
+                    </table>
+                    <div class="button">
+                        <a href="login.php"><button>buy</button></a>
+                    </div>
+                </div>
+                <?php
+            }
+
+
+
+            curl_close($curl);
+
+            ?>
 
     </main>
 
-
-    <script src="js/dropdown.js"></script>
 </body>
 
 </html>

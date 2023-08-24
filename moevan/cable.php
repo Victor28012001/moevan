@@ -96,9 +96,9 @@ if (strlen($_SESSION['id'] == 0)) {
             </form>
 
 
-            <div class="faq">
+            <!-- <div class="faq">
                 <img src="moevan icons\Group 66(1).svg" alt="">
-            </div>
+            </div> -->
 
         </div>
         <script>
@@ -206,7 +206,7 @@ if (strlen($_SESSION['id'] == 0)) {
                 array(
                     CURLOPT_URL => $host,
                     CURLOPT_RETURNTRANSFER => true,
-                    CURLOPT_ENCODING => "",
+                    // CURLOPT_ENCODING => "",
                     CURLOPT_MAXREDIRS => 10,
                     CURLOPT_USERPWD => $username . ":" . $password,
                     CURLOPT_TIMEOUT => 30,
@@ -215,7 +215,7 @@ if (strlen($_SESSION['id'] == 0)) {
                     CURLOPT_POSTFIELDS => $data,
                 )
             );
-            echo $vdata = curl_exec($curl);
+            $vdata = curl_exec($curl);
             curl_close($curl);
             $res = json_decode($vdata, true);
 
@@ -233,7 +233,7 @@ if (strlen($_SESSION['id'] == 0)) {
                 $sql1 = "INSERT INTO inf(icon,messages,active) VALUES('$icon','Your cable payment was successful.','1')";
                 $result2 = mysqli_query($GLOBALS['con'], $sql1);
             } else {
-                $icon = addslashes('moevan icons\Icon metro-wifi-connect.svg');
+                $icon = addslashes('moevan icons\🦆 icon _Television_.svg');
                 $sql = "INSERT INTO transactions(fname,lname,ttype,email,tid,amount,dated,astatus) VALUES('$fname','$lname','Cable','$email',0,'-',NOW(),'Error')";
                 $result1 = mysqli_query($GLOBALS['con'], $sql);
                 $sql1 = "INSERT INTO inf(icon,messages,active) VALUES('$icon','Your cable payment was not successful.','1')";

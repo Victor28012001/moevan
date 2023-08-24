@@ -57,7 +57,7 @@ if (strlen($_SESSION['id'] == 0)) {
                         case 'funding': ?>
                             <div class="boxe">
                                 <div class="img">
-                                    <img src="moevan icons\🦆 icon _cash plus_.png" alt="">
+                                    <img src="moevan icons\🦆 icon _cash plus_.svg" alt="">
                                 </div>
                                 <div class="write">
                                     <h4>Account Funding</h4>
@@ -89,7 +89,7 @@ if (strlen($_SESSION['id'] == 0)) {
                         case 'data': ?>
                             <div class="boxe">
                                 <div class="img">
-                                    <img src="moevan icons\Icon metro-wifi-connect.png" alt="">
+                                    <img src="moevan icons\Icon metro-wifi-connect.svg" alt="">
                                 </div>
                                 <div class="write">
                                     <h4>Data subscription</h4>
@@ -127,7 +127,7 @@ if (strlen($_SESSION['id'] == 0)) {
                         case 'cable': ?>
                             <div class="boxe">
                                 <div class="img">
-                                    <img src="moevan icons\🦆 icon _Television_.png" alt="">
+                                    <img src="moevan icons\🦆 icon _Television_.svg" alt="">
                                 </div>
                                 <div class="write">
                                     <h4>Cable subscription</h4>
@@ -161,7 +161,7 @@ if (strlen($_SESSION['id'] == 0)) {
                         case 'electricity': ?>
                             <div class="boxe">
                                 <div class="img">
-                                    <img src="moevan icons\🦆 icon _Electricity_.png" alt="">
+                                    <img src="moevan icons\🦆 icon _Electricity_.svg" alt="">
                                 </div>
                                 <div class="write">
                                     <h4>Electricity bill</h4>

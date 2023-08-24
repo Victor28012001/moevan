@@ -146,7 +146,7 @@ if (strlen($_SESSION['id'] == 0)) {
                     CURLOPT_STDERR => fopen('curl.log', 'w+'),
                 )
             );
-            echo $vdata = curl_exec($curl);
+            $vdata = curl_exec($curl);
             // $info = curl_getinfo($curl);
             // var_dump($info);
             // print_r($info);

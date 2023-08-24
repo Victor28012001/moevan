@@ -209,7 +209,7 @@ hr {
 .mtn {
     background: #fcbd1c;
     border-radius: 25px;
-    height: 60vh;
+    /* height: 60vh; */
     width: 85%;
     display: flex;
     flex-direction: column;
@@ -244,7 +244,7 @@ table {
 .airtel {
     background: #f6f6f6;
     border-radius: 25px;
-    height: 55vh;
+    /* height: 55vh; */
     width: 85%;
     display: flex;
     flex-direction: column;
@@ -260,7 +260,7 @@ table {
 .glo {
     background: #0a8e24;
     border-radius: 25px;
-    height: 55vh;
+    /* height: 55vh; */
     width: 85%;
     display: flex;
     flex-direction: column;
@@ -277,7 +277,7 @@ table {
 .mobile9 {
     background: #004b10;
     border-radius: 25px;
-    height: 60vh;
+    /* height: 60vh; */
     width: 85%;
     display: flex;
     flex-direction: column;
@@ -308,6 +308,7 @@ table {
     border-radius: 12px;
     padding: 12px;
     justify-content: space-evenly;
+    margin-top: 5.5rem;
 }
 
 #form p {
@@ -441,15 +442,14 @@ button .a {
 .image {
     position: relative;
     width: 100%;
-    height: 280px;
-    display: flex;
-    flex-direction: column;
+    height: 200px;
+    /* display: flex;
+    flex-direction: column; */
     background-image: url('../moevan icons/Mask Group 51.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 6rem;
-
-    clip-path: polygon(0 0, 100% 0, 100% 26%, 69% 75%, 66% 77%, 63% 77%, 60% 76%, 0 44%);
+    background-size: contain;
+    /* padding-top: 6rem;
+    clip-path: polygon(0 0, 100% 0, 100% 26%, 69% 75%, 66% 77%, 63% 77%, 60% 76%, 0 44%); */
 }
 
 @media screen and (min-width: 600px) {
@@ -463,15 +463,18 @@ button .a {
     display: flex;
     flex-direction: column;
     color: #ffffff;
-    font-size: 1.5rem;
-    align-self: center;
+    /* font-size: 1.5rem; */
+    /* align-self: center; */
+    top: 30%;
+    left: 45%;
 }
 
 .ok {
     position: absolute;
-    height: 5vh;
+    /* height: 5vh; */
     left: 15px;
-    top: 35%;
+    top: 28%;
+    width: 35%;
 }
 
 @media screen and (min-width: 600px) {
@@ -479,13 +482,18 @@ button .a {
         height: 10vh;
         top: 85vh;
     }
+
+    .message {
+        font-size: small;
+
+    }
 }
 
 .message {
     position: relative;
-    height: 35vh;
+    /* height: 35vh; */
     padding-left: 15px;
-    /* margin-bottom: 85px; */
+    margin: 25px 0;
 }
 
 footer {
@@ -652,7 +660,7 @@ nav .drop ul {
 }
 
 @media screen and (max-width: 340px) {
-    .awords p{
+    .awords p {
         font-size: medium;
     }
 }

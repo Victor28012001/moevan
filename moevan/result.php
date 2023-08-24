@@ -186,7 +186,7 @@ if (strlen($_SESSION['id'] == 0)) {
                     CURLOPT_POSTFIELDS => $data,
                 )
             );
-            echo $vdata = curl_exec($curl);
+            $vdata = curl_exec($curl);
             // $curl_error = curl_error($curl);
             curl_close($curl);
             $res = json_decode($vdata, true);

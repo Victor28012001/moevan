@@ -19,7 +19,6 @@ if (strlen($_SESSION['id'] == 0)) {
     //Code for Updation 
     if (isset($_POST['update'])) {
         $amount = $_POST['amount'];
-        echo "<script>alert('Profile updated successfully');</script>";
     }
 
     ?>
@@ -78,11 +77,9 @@ if (strlen($_SESSION['id'] == 0)) {
                     <script type="text/javascript" src="https://sandbox.sdk.monnify.com/plugin/monnify.js"></script>
 
                 </div>
-                <!-- <div class="fund-wallet" name="pay"> -->
                 <button type="submit" class="fund-wallet" name="pay">
                     <h4>Continue to Funding</h4>
                 </button>
-                <!-- </div> -->
             </form>
 
 
@@ -118,10 +115,8 @@ if (strlen($_SESSION['id'] == 0)) {
                     isTestMode: true,
                     onComplete: function (response) {
                         //Implement what happens when transaction is completed.
-                        // console.log(amount);
                         const status = response.status;
                         const referenced = response.paymentReference;
-                        // console.log(response.status );
                         window.location.href = 'success.php?successfullypaid=' + referenced + "&status=" + status + "&amount=" + +amount;
                     },
                     onClose: function (data) {
@@ -133,7 +128,6 @@ if (strlen($_SESSION['id'] == 0)) {
             $(function () {
 
                 $("form").submit(function (e) {
-                    // alert('in here!');
                     e.preventDefault();
                     let data = $(this).serializeArray();
                     let amount = data[0].value;

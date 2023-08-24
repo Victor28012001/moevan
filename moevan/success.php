@@ -61,7 +61,7 @@ if (strlen($_SESSION['id'] == 0)) {
         //Insert into database
         $sql = "INSERT INTO transactions(fname,lname,ttype,email,tid,amount,dated,astatus,numbers,plan,plan_no) VALUES('$fname','$lname','Funding','$email',$reference,'$amount','$dated','$status','$phone','funding','-')";
         $result1 = mysqli_query($GLOBALS['con'], $sql);
-        $icon = addslashes('moevan icons\🦆 icon _cash plus_.png');
+        $icon = addslashes('moevan icons\🦆 icon _cash plus_.svg');
         $sql1 = "INSERT INTO inf(icon,messages,active) VALUES('$icon','Your account was funded successfully.','1')";
         $result2 = mysqli_query($GLOBALS['con'], $sql1);
         //  $result2=mysqli_fetch_array($result1);
@@ -109,7 +109,7 @@ if (strlen($_SESSION['id'] == 0)) {
       })
     </script>
 <?php
-                $icon = addslashes('moevan icons\🦆 icon _cash plus_.png');
+                $icon = addslashes('moevan icons\🦆 icon _cash plus_.svg');
                 echo "Transaction Verification Failed!";
                 $sql1 = "INSERT INTO inf(icon,messages,active) VALUES('$icon','Your account was not funded successfully.','1')";
                 $result2 = mysqli_query($GLOBALS['con'], $sql1);

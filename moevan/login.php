@@ -109,10 +109,7 @@ if (isset($_POST['login'])) {
 
     </main>
 
-    <script src="js/dropdown.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 
