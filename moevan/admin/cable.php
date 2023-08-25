@@ -16,10 +16,10 @@ if (strlen($_SESSION['adminid'] == 0)) {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.cdnfonts.com/css/adobe-clean" rel="stylesheet">
-        <link rel="stylesheet" href="../css/style.css">
-        <link href="../css/sidebar.css" rel="stylesheet" />
-        <link rel="shortcut icon" href="..\moevan icons\meovan symbol.svg" type="image/x-icon">
-        <title>Cable subscription</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="css/sidebar.css" rel="stylesheet" />
+        <link rel="shortcut icon" href="moevan icons\meovan symbol.svg" type="image/x-icon">
+        <title>Cable subscription | Moevan</title>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     </head>
@@ -96,9 +96,9 @@ if (strlen($_SESSION['adminid'] == 0)) {
             </form>
 
 
-            <div class="faq">
+            <!-- <div class="faq">
                 <img src="moevan icons\Group 66(1).svg" alt="">
-            </div>
+            </div> -->
 
         </div>
         <script>
@@ -153,7 +153,7 @@ if (strlen($_SESSION['adminid'] == 0)) {
 
     <?php
     if (isset($_POST['tvsub'])) {
-        error_reporting(E_ALL ^ E_WARNING);
+        // error_reporting(E_ALL ^ E_WARNING);
         $serviceid = htmlspecialchars($_POST['serviceID']);
         $billerscode = htmlspecialchars($_POST['billersCode']);
         $variation_code = htmlspecialchars($_POST['variation_code']);
@@ -163,6 +163,8 @@ if (strlen($_SESSION['adminid'] == 0)) {
         $username = "Moevanenterprise@gmail.com"; //email address(sandbox@vtpass.com)
         $password = "Promise1234"; //password (sandbox)
         $host = 'https://sandbox.vtpass.com/api/pay';
+        echo "<script>alert($phone)</script>";
+        echo "<script>console.log($phone)</script>";
 
 
         $userid = $_SESSION['id'];
@@ -204,7 +206,7 @@ if (strlen($_SESSION['adminid'] == 0)) {
                 array(
                     CURLOPT_URL => $host,
                     CURLOPT_RETURNTRANSFER => true,
-                    CURLOPT_ENCODING => "",
+                    // CURLOPT_ENCODING => "",
                     CURLOPT_MAXREDIRS => 10,
                     CURLOPT_USERPWD => $username . ":" . $password,
                     CURLOPT_TIMEOUT => 30,
@@ -213,31 +215,33 @@ if (strlen($_SESSION['adminid'] == 0)) {
                     CURLOPT_POSTFIELDS => $data,
                 )
             );
-            echo $vdata = curl_exec($curl);
+            $vdata = curl_exec($curl);
             curl_close($curl);
             $res = json_decode($vdata, true);
 
             // Insert to Database
 
             if ($res['code'] == "000") {
+                $icon = addslashes('moevan icons\🦆 icon _Television_.svg');
                 $amount = $_POST['amount'];
                 $dated = date("Y-m-d H:m:s");
-                $time = time();
-                $year = date("Y-m-d");
                 $status = $res['response_description'];
                 $product = $res['content']['transactions']['product_name'];
                 $particulars = $res['content']['transactions']['transactionId'] . " - " . $res['requestId'];
-                $sql = "INSERT INTO transactions(fname,lname,ttype,email,tid,amount,dated,astatus) VALUES('$fname','$lname','$product','$email','$particulars','$amount','$dated','$status')";
+                $sql = "INSERT INTO transactions(fname,lname,ttype,email,tid,amount,dated,astatus,numbers,plan,plan_no) VALUES('$fname','$lname','$product','$email','$particulars','$amount','$dated','$status','$billerscode','cable', '-')";
                 $result1 = mysqli_query($GLOBALS['con'], $sql);
-                $sql1 = "INSERT INTO inf(amount,numbers,plan,timer,dated) VALUES('$amount','$phone','-','$time','$year')";
+                $sql1 = "INSERT INTO inf(icon,messages,active) VALUES('$icon','Your cable payment was successful.','1')";
                 $result2 = mysqli_query($GLOBALS['con'], $sql1);
             } else {
+                $icon = addslashes('moevan icons\🦆 icon _Television_.svg');
                 $sql = "INSERT INTO transactions(fname,lname,ttype,email,tid,amount,dated,astatus) VALUES('$fname','$lname','Cable','$email',0,'-',NOW(),'Error')";
                 $result1 = mysqli_query($GLOBALS['con'], $sql);
+                $sql1 = "INSERT INTO inf(icon,messages,active) VALUES('$icon','Your cable payment was not successful.','1')";
+                $result2 = mysqli_query($GLOBALS['con'], $sql1);
             }
             if ($status == "TRANSACTION SUCCESSFUL") {
                 $astatus = "success!";
-                $icon = "success";
+                $icons = "success";
                 $color = "#0CE864";
                 $tstatus = "successful (" . $res['response_description'] . ")";
                 $new_balance = $balance - $amount;
@@ -270,7 +274,7 @@ if (strlen($_SESSION['adminid'] == 0)) {
             </style>
             <script>
                 Swal.fire({
-                    icon: '<?php echo $icon; ?>',
+                    icon: '<?php echo $icons; ?>',
                     title: '<?php echo $astatus; ?>',
                     text: 'Your <?php echo $product; ?> was <?php echo $tstatus; ?>.',
                     background: '#1E1E1E',
@@ -313,10 +317,9 @@ if (strlen($_SESSION['adminid'] == 0)) {
         <?php }
     } ?>
 
-    <script src="../js/script.js"></script>
+    <script src="js/script.js"></script>
 
     </html>
 <?php }
-;
 
 ?>

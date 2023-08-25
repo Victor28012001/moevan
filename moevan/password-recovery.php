@@ -53,7 +53,7 @@ if (isset($_POST['send'])) {
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x:hidden;">
 
 <head>
     <meta charset="utf-8" />

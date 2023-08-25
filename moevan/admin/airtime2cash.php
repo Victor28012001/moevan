@@ -3,7 +3,8 @@ include_once('../includes/config.php');
 if (strlen($_SESSION['adminid'] == 0)) {
   header('location:logout.php');
 } else {
-    ?>
+  error_reporting(E_ALL ^ E_WARNING);
+ ?>
 
     <!DOCTYPE html>
     <html lang="en">
@@ -66,9 +67,13 @@ if (strlen($_SESSION['adminid'] == 0)) {
                 <input type="text">
             </div>
 
-            <div class="fund-wallet">
-                <h5>Proceed</h5>
+            <div class="fund-wallet" name="Topup">
+                <button type="submit" class="btn-primary">
+                    <h5>Proceed</h5>
+                </button>
             </div>
+
+            
         </div>
     </body>
 

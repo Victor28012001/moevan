@@ -3,7 +3,22 @@ session_start();
 include_once('includes/config.php');
 if (strlen($_SESSION['id'] == 0)) {
   header('location:logout.php');
-} else {
+} else {?>
+
+
+<!DOCTYPE html>
+<html lang="en" style="overflow-x:hidden;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+<?php
   if (!$_GET["successfullypaid"]) {
     header("Location: welcome.php");
     exit;
@@ -68,7 +83,6 @@ if (strlen($_SESSION['id'] == 0)) {
         if ($result1) {
           $new_balance = (int) $balance + (int) $amount;
           $update = mysqli_query($con, "update users set balance='$new_balance' where id='$userid'"); ?>
-          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
           <script>
             Swal.fire({
               icon: 'success',

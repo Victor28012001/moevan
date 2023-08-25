@@ -209,12 +209,11 @@ hr {
 .mtn {
     background: #fcbd1c;
     border-radius: 25px;
-    /* height: 60vh; */
     width: 85%;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    /* justify-content: space-between; */
+    max-width: 300px;
 }
 
 .slogo {
@@ -239,16 +238,17 @@ table {
     flex-direction: row;
     align-self: flex-end;
     margin: 7px 20px 1px 0;
+    margin-bottom: 12px;
 }
 
 .airtel {
     background: #f6f6f6;
     border-radius: 25px;
-    /* height: 55vh; */
     width: 85%;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+    max-width: 300px;
 }
 
 
@@ -260,11 +260,11 @@ table {
 .glo {
     background: #0a8e24;
     border-radius: 25px;
-    /* height: 55vh; */
     width: 85%;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+    max-width: 300px;
 }
 
 
@@ -277,13 +277,13 @@ table {
 .mobile9 {
     background: #004b10;
     border-radius: 25px;
-    /* height: 60vh; */
     width: 85%;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
     margin-bottom: 120px;
     padding-bottom: 15px;
+    max-width: 300px;
 }
 
 
@@ -309,10 +309,11 @@ table {
     padding: 12px;
     justify-content: space-evenly;
     margin-top: 5.5rem;
+    max-width: 340px;
 }
 
 #form p {
-    font-size: x-small;
+    font-size: small;
 }
 
 #formr {
@@ -326,6 +327,7 @@ table {
     border-radius: 12px;
     padding: 5px 12px;
     top: 40px;
+    max-width: 340px;
 }
 
 #formr input {
@@ -345,7 +347,7 @@ table {
 }
 
 #formr p {
-    font-size: x-small;
+    font-size: small;
 }
 
 /* #nav{
@@ -443,11 +445,10 @@ button .a {
     position: relative;
     width: 100%;
     height: 200px;
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
     background-image: url('../moevan icons/Mask Group 51.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     /* padding-top: 6rem;
     clip-path: polygon(0 0, 100% 0, 100% 26%, 69% 75%, 66% 77%, 63% 77%, 60% 76%, 0 44%); */
 }
@@ -463,7 +464,7 @@ button .a {
     display: flex;
     flex-direction: column;
     color: #ffffff;
-    /* font-size: 1.5rem; */
+    font-size: 1.5rem;
     /* align-self: center; */
     top: 30%;
     left: 45%;
@@ -477,14 +478,18 @@ button .a {
     width: 35%;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 400px) {
     .ok {
         height: 10vh;
         top: 85vh;
     }
+    
+    .image {
+        height: 100vh;
+    }
 
     .message {
-        font-size: small;
+        font-size: medium;
 
     }
 }

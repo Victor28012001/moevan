@@ -28,7 +28,7 @@ echo "<script type='text/javascript'> document.location = 'change-password.php';
     
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x:hidden;">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />

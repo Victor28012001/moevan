@@ -292,7 +292,7 @@ height: 15%; */
     /* Airtime TopUp */
 
     position: relative;
-    margin: 42px 0;
+    margin: 12px 0;
     color: #00C0C0;
     display: flex;
     justify-content: center;
@@ -448,7 +448,7 @@ input {
     background-size: contain;
 
     position: relative;
-    width: 75%;
+    width: 90%;
     height: auto;
     max-width: 387px;
     max-height: 180px;
@@ -507,7 +507,8 @@ input {
 
 .wr-it {
     display: flex;
-    justify-content: space-between;
+    gap: 4px;
+    /* justify-content: space-between; */
 }
 
 .writes p {
@@ -531,8 +532,8 @@ textarea {
     position: relative;
     width: 95%;
     height: 40%;
-    left: 20px;
-
+    left: 50%;
+    transform: translateX(-50%);
     background: #E2E1E1;
     border-radius: 5px;
 }
@@ -566,13 +567,14 @@ textarea {
 }
 
 .questions {
+    position: relative;
     max-width: 90%;
     margin-top: 2rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid #00C0C0;
     cursor: pointer;
     padding: 1rem;
-    margin-left: 50%;
+    left: 50%;
     transform: translateX(-50%);
 }
 
@@ -913,7 +915,6 @@ table {
 .contwhat {
     position: relative;
     width: 100%;
-    height: 80%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -961,7 +962,7 @@ table {
 } */
 
 
-.loader{
+.loader {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -970,7 +971,7 @@ table {
     animation: change 3s infinite linear;
 }
 
-.loader>div img{
+.loader>div img {
     height: 100px;
     width: 100px;
     top: 0;
@@ -981,41 +982,51 @@ table {
     margin: auto;
     opacity: 1;
     animation: spin 3s infinite linear;
-} 
+}
 
 
 
 @keyframes change {
-    20%{
+    20% {
         background-color: #FFFFF0;
     }
-    40%{
+
+    40% {
         background-color: #7D7D68;
     }
-    60%{
+
+    60% {
         background-color: #373724;
     }
-    80%{
+
+    80% {
         background-color: #000;
-    }100%{
+    }
+
+    100% {
         background-color: #ffffff;
     }
 }
 
 
 @keyframes spin {
-    20%{
+    20% {
         opacity: 0;
     }
-    40%{
+
+    40% {
         opacity: 0.5;
     }
-    60%{
+
+    60% {
         opacity: 1;
     }
-    80%{
+
+    80% {
         opacity: 0;
-    }100%{
+    }
+
+    100% {
         opacity: 0.5;
     }
 }

@@ -6,7 +6,7 @@ if (strlen($_SESSION['id'] == 0)) {
     ?>
 
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang="en" style="overflow-x:hidden;">
 
     <head>
         <meta charset="UTF-8">
@@ -67,9 +67,13 @@ if (strlen($_SESSION['id'] == 0)) {
                 <input type="text">
             </div>
 
-            <div class="fund-wallet">
-                <h5>Proceed</h5>
+            <div class="fund-wallet" name="Topup">
+                <button type="submit" class="btn-primary">
+                    <h5>Proceed</h5>
+                </button>
             </div>
+
+
         </div>
     </body>
 

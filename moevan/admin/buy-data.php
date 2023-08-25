@@ -3,7 +3,7 @@ include_once('../includes/config.php');
 if (strlen($_SESSION['adminid'] == 0)) {
   header('location:logout.php');
 } else {
-    error_reporting(E_ALL ^ E_WARNING);
+        error_reporting(E_ALL ^ E_WARNING);
 
     ?>
     <!DOCTYPE html>
@@ -14,10 +14,10 @@ if (strlen($_SESSION['adminid'] == 0)) {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.cdnfonts.com/css/adobe-clean" rel="stylesheet">
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/sidebar.css">
-        <link rel="shortcut icon" href="..\moevan icons\meovan symbol.svg" type="image/x-icon">
-        <title>Data Plan</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/sidebar.css">
+        <link rel="shortcut icon" href="moevan icons\meovan symbol.svg" type="image/x-icon">
+        <title>Data Plan | Moevan</title>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </head>
 
@@ -195,27 +195,29 @@ if (strlen($_SESSION['adminid'] == 0)) {
                     CURLOPT_POSTFIELDS => $data,
                 )
             );
-            echo $vdata = curl_exec($curl);
+            $vdata = curl_exec($curl);
             curl_close($curl);
             $res = json_decode($vdata, true);
 
             // Insert to Database
 
             if ($res['code'] == "000") {
+                $icon = addslashes('moevan icons\Icon metro-wifi-connect.svg');
                 $amount = $_POST['amount'];
                 $dated = date("Y-m-d H:m:s");
-                $time = time();
-                $year = date("Y-m-d");
                 $status = $res['response_description'];
                 $product = $res['content']['transactions']['product_name'];
                 $particulars = $res['content']['transactions']['transactionId'] . " - " . $res['requestId'];
-                $sql = "INSERT INTO transactions(fname,lname,ttype,email,tid,amount,dated,astatus) VALUES('$fname','$lname','$product','$email','$particulars','$amount','$dated','$status')";
+                $sql = "INSERT INTO transactions(fname,lname,ttype,email,tid,amount,dated,astatus,numbers,plan,plan_no) VALUES('$fname','$lname','$product','$email','$particulars','$amount','$dated','$status','$phone','data','-')";
                 $result1 = mysqli_query($GLOBALS['con'], $sql);
-                $sql1 = "INSERT INTO inf(amount,numbers,plan,timer,dated) VALUES('$amount','$phone','-','$time','$year')";
+                $sql1 = "INSERT INTO inf(icon,messages,active) VALUES('$icon','Your data subscription was successful.','1')";
                 $result2 = mysqli_query($GLOBALS['con'], $sql1);
             } else {
+                $icon = addslashes('moevan icons\Icon metro-wifi-connect.svg');
                 $sql = "INSERT INTO transactions(fname,lname,ttype,user_email,tid,amount,dated,astatus) VALUES('$fname','$lname','Data','$email',0,'-',NOW(),'Error')";
                 $result1 = mysqli_query($GLOBALS['con'], $sql);
+                $sql1 = "INSERT INTO inf(icon,messages,active) VALUES('$icon','Your data subscription was not successful.','1')";
+                $result2 = mysqli_query($GLOBALS['con'], $sql1);
             }
             if ($status == "TRANSACTION SUCCESSFUL") {
                 $astatus = "success!";
@@ -263,7 +265,9 @@ if (strlen($_SESSION['adminid'] == 0)) {
                     color: '#ffffff'
                 })
             </script>
-        <?php } else {
+            <?php
+            header('welcome.php');
+        } else {
             ?>
             <style>
                 .swal2-title {
@@ -292,9 +296,11 @@ if (strlen($_SESSION['adminid'] == 0)) {
                     color: '#ffffff'
                 })
             </script>
-        <?php }
+        <?php 
+        
+        header('welcome.php');}
     } ?>
-    <script src="../js/script.js"></script>
+    <script src="js/script.js"></script>
 
     </html>
 <?php }

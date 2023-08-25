@@ -7,7 +7,7 @@ if (strlen($_SESSION['id'] == 0)) {
 
     ?>
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang="en" style="overflow-x:hidden;">
 
     <head>
         <meta charset="UTF-8">

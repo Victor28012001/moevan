@@ -7,7 +7,7 @@ if (strlen($_SESSION['id'] == 0)) {
 } ?>
 
 <!DOCTYPE html>
-<html>
+<html style="overflow-x:hidden;">
 
 <head>
   <meta charset="UTF-8">
@@ -32,12 +32,14 @@ if (strlen($_SESSION['id'] == 0)) {
       <h4 style="color: #00C0C0; margin-left: 4%; margin-top: 1%;">Sender ID</h4>
       <input type="text" name="sender">
       <input type="hidden" name="submit">
+      <br>
       <h4 style="color: #00C0C0; margin-left: 4%; margin-top: 4%;">Enter Phone Numbers</h4>
       <textarea name="numbers" id="numbers" placeholder="Phone Number List"></textarea>
-      <br><br>
+      <br>
       <h4 style="color: #00C0C0; margin-left: 4%; margin-top: 2%;">Enter Message</h4>
       <!-- <input type="text" name="message"> -->
       <textarea name="message" id="message" placeholder="Message"></textarea>
+      <br>
       <div class="fund-wallet" name="pay">
         <button type="submit" class="btn-primary" name="pay">
           <h5 style="color: #000;">Send messages</h5>

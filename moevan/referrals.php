@@ -7,7 +7,7 @@ if (strlen($_SESSION['id'] == 0)) {
 
 
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang="en" style="overflow-x:hidden;">
 
     <head>
         <meta charset="UTF-8">
@@ -33,7 +33,7 @@ if (strlen($_SESSION['id'] == 0)) {
 
 
                 <div class='wallet-balance' style='color:blue; padding:12px'>
-                    <?php echo "<p style='color:blue;line-height: 1.0;width: 90%;height: 100%;'>your referral link:</br>
+                    <?php echo "<p style='color:blue;line-height: 1.0;width: 90%;position: absolute;top: 50%;transform: translateY(-50%);'>your referral link:</br>
         <a href='http://localhost/user%20Registration%20and%20login%20System%20with%20admin%20panel/loginsystem/signup.php/?referralcode=$result[referralcode]'width: 0.5rem;height: 40%;display: block;'>
         http://localhost/user%20Registration%20and%20login
         %20System%20with%20admin%20panel

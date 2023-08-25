@@ -7,7 +7,7 @@ if (strlen($_SESSION['id'] == 0)) {
 
 
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang="en" style="overflow-x:hidden;">
 
     <head>
         <meta charset="UTF-8">
@@ -18,6 +18,20 @@ if (strlen($_SESSION['id'] == 0)) {
         <link href="css/sidebar.css" rel="stylesheet" />
         <link rel="shortcut icon" href="moevan icons\meovan symbol.svg" type="image/x-icon">
         <title>Bank Transfer | Moevan</title>
+        <style>
+            .writes {
+                position: relative;
+                width: 100%;
+                padding: 3px;
+            }
+
+            .writes p {
+                color: white;
+                line-height: 15px;
+                font-size: 14px;
+                margin-bottom: 6px;
+            }
+        </style>
     </head>
 
     <body>
@@ -35,18 +49,21 @@ if (strlen($_SESSION['id'] == 0)) {
             <div class="box" id="box1">
                 <h4>Sterling bank</h4>
                 <div class="rect">
-                    <img src="moevan icons\Rectangle 458.png" alt="">
-                    <div class="topup-pay">
-                        <div class="keys">
-                            <p>Account Number:</p>
-                            <p>Account Name:</p>
-                            <p>Charge:</p>
+                    <img src="moevan icons\Rectangle 458.svg" alt="">
+                    <div class="writes">
+                        <div class="wr-it">
+                            <p class="keys">Account Number:</p>
+                            <p class="values">1234567890</p>
                         </div>
-                        <div class="values">
-                            <p>1234567890</p>
-                            <p>Client name</p>
-                            <p>N50</p>
+                        <div class="wr-it">
+                            <p class="keys">Account Name:</p>
+                            <p class="values">Client name</p>
                         </div>
+                        <div class="wr-it">
+                            <p class="keys">Charge:</p>
+                            <p class="values"><span>&#8358;</span>50</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -58,18 +75,21 @@ if (strlen($_SESSION['id'] == 0)) {
             <div class="box" id="box2">
                 <h4>Wema bank</h4>
                 <div class="rect">
-                    <img src="moevan icons\Rectangle 459.png" alt="">
-                    <div class="topup-pay">
-                        <div class="keys">
-                            <p>Account Number:</p>
-                            <p>Account Name:</p>
-                            <p>Charge:</p>
+                    <img src="moevan icons\Rectangle 459.svg" alt="">
+                    <div class="writes">
+                        <div class="wr-it">
+                            <p class="keys">Account Number:</p>
+                            <p class="values">1234567890</p>
                         </div>
-                        <div class="values">
-                            <p>1234567890</p>
-                            <p>Client name</p>
-                            <p>N50</p>
+                        <div class="wr-it">
+                            <p class="keys">Account Name:</p>
+                            <p class="values">Client name</p>
                         </div>
+                        <div class="wr-it">
+                            <p class="keys">Charge:</p>
+                            <p class="values"><span>&#8358;</span>50</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -80,18 +100,21 @@ if (strlen($_SESSION['id'] == 0)) {
             <div class="box" id="box3">
                 <h4>Moniepoint</h4>
                 <div class="rect">
-                    <img src="moevan icons\Rectangle 460.png" alt="">
-                    <div class="topup-pay">
-                        <div class="keys">
-                            <p>Account Number:</p>
-                            <p>Account Name:</p>
-                            <p>Charge:</p>
+                    <img src="moevan icons\Rectangle 460.svg" alt="">
+                    <div class="writes">
+                        <div class="wr-it">
+                            <p class="keys">Account Number:</p>
+                            <p class="values">1234567890</p>
                         </div>
-                        <div class="values">
-                            <p>1234567890</p>
-                            <p>Client name</p>
-                            <p>N50</p>
+                        <div class="wr-it">
+                            <p class="keys">Account Name:</p>
+                            <p class="values">Client name</p>
                         </div>
+                        <div class="wr-it">
+                            <p class="keys">Charge:</p>
+                            <p class="values"><span>&#8358;</span>50</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -104,18 +127,22 @@ if (strlen($_SESSION['id'] == 0)) {
             <div class="box" id="box4">
                 <h4>Fidelity bank</h4>
                 <div class="rect">
-                    <img src="moevan icons\Rectangle 461.png" alt="">
-                    <div class="topup-pay">
-                        <div class="keys">
-                            <p>Account Number:</p>
-                            <p>Account Name:</p>
-                            <p>Charge:</p>
+                    <img src="moevan icons\Rectangle 461.svg" alt="">
+
+                    <div class="writes">
+                        <div class="wr-it">
+                            <p class="keys">Account Number:</p>
+                            <p class="values">1234567890</p>
                         </div>
-                        <div class="values">
-                            <p>1234567890</p>
-                            <p>Client name</p>
-                            <p>N50</p>
+                        <div class="wr-it">
+                            <p class="keys">Account Name:</p>
+                            <p class="values">Client name</p>
                         </div>
+                        <div class="wr-it">
+                            <p class="keys">Charge:</p>
+                            <p class="values"><span>&#8358;</span>50</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
