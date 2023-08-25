@@ -72,8 +72,8 @@ if (strlen($_SESSION['id'] == 0)) {
                     </div>
 
                     <div class="values">
-                        <h5>N<span id="chg"></span>.00</h5>
-                        <h5>N<span id="chng"></span>.00</h5>
+                        <h5><span>&#8358;</span><span id="chg"></span>.00</h5>
+                        <h5><span>&#8358;</span><span id="chng"></span>.00</h5>
                     </div>
 
                 </div>

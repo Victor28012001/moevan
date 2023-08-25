@@ -33,7 +33,7 @@ if (strlen($_SESSION['id'] == 0)) {
                     <img src="moevan icons\🦆 icon _connect link category_.svg" alt="">
                     <div class="write">
                         <h4>Upgrade to Affiliate</h4>
-                        <h4>N 10000</h4>
+                        <h4><span>&#8358;</span> 10000</h4>
                     </div>
                 </div>
             </a>
@@ -44,7 +44,7 @@ if (strlen($_SESSION['id'] == 0)) {
                     <img src="moevan icons\🦆 icon _user group_.svg" alt="">
                     <div class="write">
                         <h4>Upgrade to Top user</h4>
-                        <h4>N 5000</h4>
+                        <h4><span>&#8358;</span> 5000</h4>
                     </div>
                 </div>
             </a>

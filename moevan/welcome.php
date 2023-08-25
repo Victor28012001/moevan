@@ -83,7 +83,7 @@ if (strlen($_SESSION['id'] == 0)) {
           <img src="moevan icons\Vector1.png" alt="">
           <div class="write-up">
             <h5>Wallet balance</h5>
-            <h5>N
+            <h5><span>&#8358;</span>
               <?php echo number_format($balance); ?>
             </h5>
           </div>
